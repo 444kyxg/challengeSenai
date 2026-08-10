@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ford</title>    
+    <title>Ford - Home</title>    
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/carousel.js"></script>
@@ -12,7 +12,7 @@
 <body>
     <header>       
         <div>
-            <img src="img/logo-ford-256.png" width="150" class="logo" />
+            <a href="index.html"><img src="img/logo-ford-256.png" width="150" class="logo" /></a>
         </div>
         <nav>
             <ul>
@@ -30,25 +30,40 @@
 
     </header>
     <main>
-        <div id="carousel">
-        </div>
-        <div id="carousel-title">
-        </div>
-        <script>
-             //insert each image on carousel
-            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
-            carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
-            carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
-            Carousel.Start(carouselArr);
-        </script>
+        <main>
+    <div id="carousel">
+        <button id="prev-btn" class="carousel-btn" onclick="Carousel.Prev()">&lt;</button>
+        <button id="next-btn" class="carousel-btn" onclick="Carousel.Next()">&gt;</button>
+    </div>
+    <div id="carousel-title"></div>
+
+    <script>
+        carouselArr.push(new Carousel("imagem_1.jpg", "Esta é a nova Ranger Ford 2022. Verifique novidades.", "lancamento.html"));
+        carouselArr.push(new Carousel("imagem_2.jpg", "Ford: A nossa história.", "#"));
+        carouselArr.push(new Carousel("imagem_3.jpg", "Nova Ford Bronco Sport 2022.", "lancamento.html"));
+        Carousel.Init(carouselArr);
+    </script>
+</main>
     </main>
     <footer>
         <nav id="social">
             <ul>
                 <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+                <li>
+                    <a href="https://www.facebook.com/FordBrasil" target="_blank" rel="noopener noreferrer" title="Facebook">
+                        <img src="img/facebook-50.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/fordbrasil" target="_blank" rel="noopener noreferrer" title="YouTube">
+                        <img src="img/youtube-squared-50.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/fordbrasil" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <img src="img/instagram-logo-50.png">
+                    </a>
+                </li>
             </ul>
         </nav>
         <div>
