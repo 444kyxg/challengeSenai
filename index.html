@@ -16,35 +16,28 @@
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lancamento.html">Lançamento</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lancamento.html">Lançamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-
     </header>
-    <main>
-        <main>
-    <div id="carousel">
-        <button id="prev-btn" class="carousel-btn" onclick="Carousel.Prev()">&lt;</button>
-        <button id="next-btn" class="carousel-btn" onclick="Carousel.Next()">&gt;</button>
-    </div>
-    <div id="carousel-title"></div>
 
-    <script>
-        carouselArr.push(new Carousel("imagem_1.jpg", "Esta é a nova Ranger Ford 2022. Verifique novidades.", "lancamento.html"));
-        carouselArr.push(new Carousel("imagem_2.jpg", "Ford: A nossa história.", "#"));
-        carouselArr.push(new Carousel("imagem_3.jpg", "Nova Ford Bronco Sport 2022.", "lancamento.html"));
-        Carousel.Init(carouselArr);
-    </script>
-</main>
+    <main>
+        <div id="carousel">
+            <button id="prev-btn" class="carousel-btn" onclick="Carousel.Prev()">&lt;</button>
+            <button id="next-btn" class="carousel-btn" onclick="Carousel.Next()">&gt;</button>
+        </div>
+        <div id="carousel-title"></div>
+
+        <script>
+            carouselArr.push(new Carousel("imagem_1.jpg", "Esta é a nova Ranger Ford 2022. Verifique novidades.", "lancamento.html"));
+            carouselArr.push(new Carousel("imagem_2.jpg", "Ford: A nossa história.", "lancamento.html"));
+            carouselArr.push(new Carousel("imagem_3.jpg", "Nova Ford Bronco Sport 2022.", "lancamento.html"));
+            Carousel.Init(carouselArr);
+        </script>
     </main>
+
     <footer>
         <nav id="social">
             <ul>
@@ -67,7 +60,7 @@
             </ul>
         </nav>
         <div>
-           <img src="img/ford-96.png" width="70"  />
+           <img src="img/ford-96.png" width="70" />
         </div>
     </footer>    
 </body>

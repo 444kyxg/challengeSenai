@@ -10,45 +10,46 @@ html {
     height: 100%;
 }
 
-/* Container do carrossel com altura fixada */
 div#carousel {
     position: relative;
-    height: 46vh;
-    min-height: 350px;
+    height: 600px;
     width: 100%;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 button.carousel-btn {
-    position: absolute !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    width: 45px !important;
-    height: 45px !important;
-    float: none !important;
-    background-color: rgba(19, 81, 216, 0.7) !important;
-    color: #ffffff !important;
-    font-size: 22px !important;
-    font-weight: bold !important;
-    border: none !important;
-    border-radius: 50% !important;
-    cursor: pointer !important;
-    z-index: 10 !important;
-    line-height: 1 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    float: none;
+    background-color: rgba(74, 112, 194, 0.7);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10 ;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button.carousel-btn:hover {
-    background-color: rgba(27, 53, 126, 1) !important;
+    background-color: rgba(27, 53, 126, 1);
 }
 
 #prev-btn {
-    left: 20px !important;
+    left: 20px;
 }
 
 #next-btn {
-    right: 20px !important;
+    right: 20px;
 }
 
 div#carousel-title a {
@@ -144,6 +145,7 @@ footer div {
 button:hover {
     background: #1b357e;
 }
+
 button {
     background: #1351d8;
     color: #fff;

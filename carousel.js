@@ -13,8 +13,6 @@ class Carousel {
             Carousel._sequence = 0;
             Carousel._size = arr.length;
             Carousel.UpdateView();
-        } else {
-            throw "Method Init needs a valid Array Variable.";
         }
     }
 
@@ -39,11 +37,11 @@ class Carousel {
         let carouselDiv = document.getElementById("carousel");
 
         if (carouselDiv && item) {
-            carouselDiv.style.backgroundImage = "url('img/" + item.Image + "')";
-            carouselDiv.style.backgroundRepeat = "no-repeat";
+            carouselDiv.style.backgroundImage = `url('img/${item.Image}')`;
             carouselDiv.style.backgroundSize = "cover";
             carouselDiv.style.backgroundPosition = "center";
-            
+            carouselDiv.style.backgroundRepeat = "no-repeat";
+
             document.getElementById("carousel-title").innerHTML =
                 `<a href="${item.Url}">${item.Title}</a>`;
         }
