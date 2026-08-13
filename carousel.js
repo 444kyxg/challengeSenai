@@ -13,7 +13,15 @@ class Carousel {
             Carousel._sequence = 0;
             Carousel._size = arr.length;
             Carousel.UpdateView();
+            Carousel.StartAutoPlay();
         }
+    }
+
+    static StartAutoPlay(){
+        if(Carousel._interval){
+            clearInterval(Carousel._interval);
+        }
+        Carousel._interval = setInterval(Carousel.Next, 3000);
     }
 
     static Next(){
@@ -38,7 +46,7 @@ class Carousel {
 
         if (carouselDiv && item) {
             carouselDiv.style.backgroundImage = `url('img/${item.Image}')`;
-            carouselDiv.style.backgroundSize = "cover";
+            carouselDiv.style.backgroundSize = "contain";
             carouselDiv.style.backgroundPosition = "center";
             carouselDiv.style.backgroundRepeat = "no-repeat";
 
