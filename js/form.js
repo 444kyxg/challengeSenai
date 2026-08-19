@@ -31,3 +31,9 @@ function Post(form) {
 
     form.reset();
 }
+
+function validarEnvio() {
+    const checkboxTermos = document.getElementById("aceitoTermos");
+    const btnEnviar = document.getElementById("btnEnviar");
+    btnEnviar.disabled = !checkboxTermos.checked;
+}
